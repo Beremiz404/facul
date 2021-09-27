@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+img[usemap]{
+    border: none;
+    height: auto;
+    max-width: 100%;
+    width: auto;
+}
+
+/* Definindo corpo para o meio ocupando 50% da width */
+#corpo{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+@media only screen and (max-width: 950px) {
+    #corpo{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+@media only screen and (max-width: 1700px) {
+    #corpo{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+.perfis {
+    width: 300px;
+    height: 80px;
+    border: none;
+    border-radius: 90px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+@media only screen and (max-width: 700px) {
+    iframe{
+        width: 100%;
+        height: 250px;
+    }
+}
+.insta{
+    width: 100%;
+    height: 760px;;
+}
+.twitter{
+    width: 100%;
+    height: 590px;
+}
+.milhoes_2{
+    background: none;
+    position: absolute;
+    z-index: 999;
+    width: 90px;
+    height: 40px;
+    margin-left: 42.8%;
+    margin-top: 9.7679%;
+    background-color: white;
+    padding-top: 8px;
+    font-family: DinBlackoff;
+    color:black;
+    font-size: 20px;
+    line-height: 16px;
+    padding-left:7px ;
+}
+.six_uni{
+    background: none;
+    position: absolute;
+    z-index: 999;
+    width: 90px;
+    height: 40px;
+    margin-left: 46%;
+    margin-top: 9.7679%;
+    background-color: white;
+    padding-top: 8px;
+    font-family: DinBlackoff;
+    color:black;
+    font-size: 20px;
+    line-height: 16px;
+    padding-left:7px ;
+}
+.five_uni{
+    background: none;
+    position: absolute;
+    z-index: 999;
+    width: 90px;
+    height: 40px;
+    margin-left: 48%;
+    margin-top: 9.7679%;
+    background-color: white;
+    padding-top: 8px;
+    font-family: DinBlackoff;
+    color:black;
+    font-size: 20px;
+    line-height: 16px;
+    padding-left:7px ;
+}
+.casas{
+    position: relative;
+    width: 300px;
+    height: 80px;
+    display: inline-block;
+}
+@font-face {
+    font-family: DinBlackoff;
+    src: url(DINCond-Black.woff);
+}

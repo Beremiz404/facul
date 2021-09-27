@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#00ffff">
+    <meta name="msapplication-TileColor" content="#00ffff">
+    <meta name="theme-color" content="#00ffff">
+    <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1" />
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/Primeiro.js"></script>
+
+    <title>Viral Labs</title>
+    <style> /* Estilo da página */
+        body{
+            background-image: url('Imgs/corpo.jpg');
+            overflow-x: hidden;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    
+    <!--<div style="position: absolute; background-color: yellowgreen; height: 4420px;">sadasd</div -->
+    <section id="corpo"> 
+        <!-- Início do topo do site 
+        <img src="Imgs/Topo.png" style="width: 100%; height: 100%;">-->
+            
+        <!--Fim do topo do site-->
+                <iframe src="time_insta.html" class="insta"></iframe>
+            <img src="Imgs/Twitter.png" style="width: 100%; height: 100%;">
+                <iframe src="time_twitter.html" class="twitter"></iframe>
+            <img src="Imgs/Marcas.png" style="width: 100%; height: 100%;">
+
+            <!-- Slide de cases -->
+        <div>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <section style="margin-left: 9%; margin-right: 9%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Imgs/Stella.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Imgs/Stella.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Imgs/Stella.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </section>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        <div>
+    </section>
+
+    <div style="margin-bottom: -200px;">
+            <img src="Imgs/rodape.png" width="2000" height="880" usemap="#mapa" alt="" />
+        <map name="mapa">
+            <area shape="rect" coords="1086,496,1470,567" target="blank" href="https://mfield.com.br/" alt="Contato" />
+            <area shape="circle" coords="1336,747,25" target="blank" href="https://www.instagram.com/mfield/?hl=pt-br" alt="Instagram" />
+            <area shape="circle" coords="1393,747,25" target="blank" href="https://www.linkedin.com/company/mfield" alt="Linkedin" />
+            <area shape="circle" coords="1451,747,25" target="blank" href="https://twitter.com/mfieldbrasil" alt="Twitter" />
+        </map>
+    </div>
+    
+    <script src="Scripts/Segundo(Ajax).js"></script>
+    <script src="Scripts/Ultimo.js"></script>
+    <script>
+        $(document).ready(function (e) {
+            $('img[usemap]').rwdImageMaps();
+
+            // $('area').on('click', function () { alert($(this).attr('alt') + ' clicked');  });
+        });
+    </script>
+</body>
+</html>
