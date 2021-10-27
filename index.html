@@ -14,7 +14,48 @@
     <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1" />
     <title>Info Codes BTG</title>
 </head>
-<body>
+<body contenteditable="false">
   <iframe width="1920" height="5000" src="https://datastudio.google.com/embed/reporting/65a5a532-edd1-4b83-aca9-1e4bb4ed0709/page/OwtbC" frameborder="0" style="border:0" allowfullscreen></iframe>
-</body>
+
+    <p>Clique no Botão para pegar sua localização</p>
+
+<button onclick="getLocation()">Pegar localização</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+
+function showError(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            x.innerHTML = "User denied the request for Geolocation."
+            break;
+        case error.POSITION_UNAVAILABLE:
+            x.innerHTML = "Location information is unavailable."
+            break;
+        case error.TIMEOUT:
+            x.innerHTML = "The request to get user location timed out."
+            break;
+        case error.UNKNOWN_ERROR:
+            x.innerHTML = "An unknown error occurred."
+            break;
+    }
+}
+</script>
+    
+    </body>
 </html>
