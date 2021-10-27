@@ -13,16 +13,25 @@
     <meta name="theme-color" content="#00ffff">
     <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1" />
     <title>Info Codes BTG</title>
+    <style>
+        .geolocal {
+          position: absolute;
+          top: 80px;
+          right: 0;
+          width: 200px;
+          height: 100px;
+          border: 3px solid #73AD21;
+            }
+        </style>
 </head>
 <body contenteditable="false">
+
   <iframe width="1920" height="5000" src="https://datastudio.google.com/embed/reporting/65a5a532-edd1-4b83-aca9-1e4bb4ed0709/page/OwtbC" frameborder="0" style="border:0" allowfullscreen></iframe>
-
+<div class="geolocal">
     <p>Clique no Botão para pegar sua localização</p>
-
-<button onclick="getLocation()">Pegar localização</button>
-
-<p id="demo"></p>
-
+    <button onclick="getLocation()">Pegar localização</button>
+    <p id="demo"></p>
+ </div>
 <script>
 var x = document.getElementById("demo");
 
